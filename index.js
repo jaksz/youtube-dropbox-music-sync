@@ -69,6 +69,13 @@ const run = async () => {
     let content = fs.readFileSync(file);
     await dfs.writeFileAsync(`/${file}`, content, { encoding: "utf8" });
   }
+
+  await dfs.writeFileAsync(
+    `/${MP3_FOLDER}/Latest sync ${moment().format("YYYY-MM-DD")}`,
+    "",
+    { encoding: "utf8" }
+  );
+
   console.log("Done!");
 };
 

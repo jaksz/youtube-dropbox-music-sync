@@ -1,0 +1,22 @@
+{
+  "name": "youtube-dropbox-music-sync",
+  "version": "1.0.0",
+  "description": "The poor man's Spotify. Copy recent new music videos matching predefined query as mp3s to a Dropbox folder",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jakub Szypulka",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.5.2",
+    "dotenv": "^6.1.0",
+    "dropbox-fs": "^0.3.0",
+    "glob": "^7.1.3",
+    "google-auth-library": "^1.5.0",
+    "googleapis": "^31.0.2",
+    "moment": "^2.22.2",
+    "youtube-search": "^1.1.1"
+  }
+}
